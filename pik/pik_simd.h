@@ -6,6 +6,8 @@
 
 namespace pik {
 
+#define PIK_INLINE inline
+
 template <size_t N>
 using BlockDesc = SIMD_PART(float, SIMD_MIN(N, SIMD_FULL(float)::N));
 
